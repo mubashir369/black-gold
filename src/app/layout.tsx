@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import TopBar from '@/components/TopBar';
 import MainNavbar from '@/components/MainNavbar';
+import Footer from '@/components/Footer';
+import ContactStrip from '@/components/ContactStrip';
 
 export const metadata: Metadata = {
   title: 'BLACK-GOLD',
@@ -21,6 +23,8 @@ export default function RootLayout({
         <TopBar />
         <MainNavbar />
         {children}
+        <ContactStrip />
+        <Footer />
       </body>
     </html>
   );
